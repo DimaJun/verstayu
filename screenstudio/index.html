@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!--? Header -->
+    <header class="header">
+      <div class="logo__block">
+        <div class="logo">
+          <img src="imgs/logo_header.png" alt="logo screen studio" />
+        </div>
+        <div class="logo__text">
+          <p class="company">Screen Studio</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <div class="nav__list">
+          <ul>
+            <li class="header__list-item">Pricing</li>
+            <li class="header__list-item">Roadmap</li>
+            <li class="header__list-item">Twitter (X)</li>
+          </ul>
+        </div>
+        <button class="download__btn">Download</button>
+      </nav>
+    </header>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <!-- Ваш контент модального окна здесь -->
+        <span class="close">x</span>
+        <h1 class="error-message">Sorry, there's been an error.</h1>
+      </div>
+    </div>
+
+    <!--? Main -->
+    <main class="main">
+      <!--! About -->
+      <section class="about">
+        <div class="wrapper">
+          <img
+            width="127"
+            height="127"
+            src="imgs/logo_127.png"
+            alt="big logo"
+          />
+          <p class="big">Beautiful screen recordings in minutes</p>
+          <p class="med">
+            Promo videos of your digital product as easy as taking a screenshot.
+          </p>
+          <button>Download Screen Studio</button>
+        </div>
+      </section>
+      <!--! Functions -->
+      <section class="functions">
+        <div class="block__text">
+          <p class="big__func">High-quality videos - no edit skills needed</p>
+          <p class="med__func">
+            Things you had to do in video software are done automatically by
+            Screen Studio.
+          </p>
+        </div>
+        <div class="cards__wrapper">
+          <div class="card__cursor">
+            <div class="video_rectangle">
+              <div class="play">
+                <img
+                  width="32"
+                  height="32"
+                  src="imgs/cards/play.png"
+                  alt="play button"
+                />
+              </div>
+            </div>
+            <div class="card__text">
+              <p class="card__title">Smooth cursor movement</p>
+              <p class="card__descr">
+                All shakiness of the mouse cursor is removed giving an instant
+                studio-quality feel.
+              </p>
+            </div>
+          </div>
+          <div class="card__zoom">
+            <div class="video_rectangle">
+              <div class="play">
+                <img
+                  width="32"
+                  height="32"
+                  src="imgs/cards/play.png"
+                  alt="play button"
+                />
+              </div>
+            </div>
+            <div class="card__text">
+              <p class="card__title">Zoom & follow mouse clicks</p>
+              <p class="card__descr">
+                Pick parts of the video you want to focus on the mouse actions
+                and Screen Studio will create all the animations.
+              </p>
+            </div>
+          </div>
+          <div class="card__motion">
+            <div class="video_rectangle">
+              <div class="play">
+                <img
+                  width="32"
+                  height="32"
+                  src="imgs/cards/play.png"
+                  alt="play button"
+                />
+              </div>
+            </div>
+            <div class="card__text">
+              <p class="card__title">Cinematic motion blur</p>
+              <p class="card__descr">
+                Every moving piece of the animation will have motion blur
+                applied, making the video feel more smooth and perceived FPS
+                higher.
+              </p>
+            </div>
+          </div>
+          <div class="card__frame">
+            <div class="video_rectangle">
+              <div class="play">
+                <img
+                  width="32"
+                  height="32"
+                  src="imgs/cards/play.png"
+                  alt="play button"
+                />
+              </div>
+            </div>
+            <div class="card__text">
+              <p class="card__title">Wallpaper & window frame</p>
+              <p class="card__descr">
+                Background padding adds breadth to your video. When publishing
+                to social media - videos will feel less busy and noisy.
+              </p>
+            </div>
+          </div>
+
+          <div class="card__change">
+            <div class="video_square">
+              <div class="play">
+                <img
+                  width="32"
+                  height="32"
+                  src="imgs/cards/play.png"
+                  alt="play button"
+                />
+              </div>
+            </div>
+            <div class="card__text">
+              <p class="card__title">Change layout and cursor</p>
+              <p class="card__descr">
+                Record iPhone simulator on your Mac and crop it - all animations
+                will be adjusted automatically. Change your cursor and your
+                mobile app demo is ready.
+              </p>
+            </div>
+          </div>
+          <div class="card__balancing">
+            <div class="video_square">
+              <div class="play">
+                <img
+                  width="32"
+                  height="32"
+                  src="imgs/cards/play.png"
+                  alt="play button"
+                />
+              </div>
+            </div>
+            <div class="card__text">
+              <p class="card__title">Automatic size balancing</p>
+              <p class="card__descr">
+                With one click you can switch horizontal/vertical/square output
+                size and all animations will be re-calculated. It is great for
+                publishing on platforms like Instagram, TikTok, etc.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="not-ready-yet">
+          <div class="card__selfie">
+            <div>Not ready yet</div>
+            <div class="card__text">
+              <p class="card__title">Selfie Camera support</p>
+              <p class="card__descr">
+                Record yourself and switch between you, the screen, or both at
+                once - with amazing animations.
+              </p>
+            </div>
+          </div>
+          <div class="card__fullscreen">
+            <div>Not ready yet</div>
+            <div class="card__text">
+              <p class="card__title">Full screen slides & Click description</p>
+              <p class="card__descr">
+                Add introductions, pauses, or click labels to explain what
+                happens on the screen.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--! Designed for MacOS -->
+      <section class="designed">
+        <div class="wrapper">
+          <p class="big__des">Designed for macOS</p>
+          <p class="med__des">
+            Up to 120 FPS video. 4K. Lossless quality. Built and designed to be
+            fast, reliable and easy to use.
+          </p>
+          <img src="imgs/designed/designed-photo.png" alt="mac menu" />
+        </div>
+      </section>
+      <!--! Screen Studio Users -->
+      <section class="users-reviews">
+        <div class="wrapper">
+          <p class="big__rev">Meet Screen Studio users</p>
+          <p class="med__rev">
+            Screen Studio empowers people to quickly create beautiful videos of
+            their products and services.
+          </p>
+        </div>
+        <div class="reviews">
+          <div class="column-1">
+            <div class="review">
+              <div class="profile">
+                <img src="imgs/users/dog.png" alt="user photo" />
+                <div class="data">
+                  <p>René Brandel</p>
+                  <p>@renebrandel</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>
+                  The best $89 I spent in the last week is buying a license for
+                  It makes you an instant DIY promo video production company!
+                  Thanks @pie6k
+                </p>
+              </div>
+            </div>
+            <div class="review">
+              <div class="profile">
+                <img src="imgs/users/dog.png" alt="user photo" />
+                <div class="data">
+                  <p>René Brandel</p>
+                  <p>@renebrandel</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>
+                  I have been looking for a screen recording app like for a
+                  while now. Came across @pie6k and his work the other day,
+                  which is top-notch. Love the transparency and know it's only
+                  gonna get better from here!
+                </p>
+              </div>
+            </div>
+            <div class="review">
+              <div class="profile">
+                <img src="imgs/users/dog.png" alt="user photo" />
+                <div class="data">
+                  <p>René Brandel</p>
+                  <p>@renebrandel</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>
+                  @pie6k Just downloaded it. That's f*cking insane. Congrats.
+                  Super easy to use and amazing results!
+                </p>
+              </div>
+            </div>
+            <div class="review">
+              <div class="profile">
+                <img src="imgs/users/dog.png" alt="user photo" />
+                <div class="data">
+                  <p>René Brandel</p>
+                  <p>@renebrandel</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>
+                  @pie6k just downloaded #screenstudio and already sort of love
+                  it! Def. using it for screen recordings of @flutterflow so
+                  awesome!
+                </p>
+              </div>
+            </div>
+            <div class="review">
+              <div class="profile">
+                <img src="imgs/users/dog.png" alt="user photo" />
+                <div class="data">
+                  <p>René Brandel</p>
+                  <p>@renebrandel</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>
+                  from @pie6k! This screen recorder is truly a game changer for
+                  creating delightful demos!
+                </p>
+              </div>
+            </div>
+            <div class="review">
+              <div class="profile">
+                <img src="imgs/users/dog.png" alt="user photo" />
+                <div class="data">
+                  <p>René Brandel</p>
+                  <p>@renebrandel</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>
+                  @pie6k Hey Adam just want to say it looks incredible thank you
+                  been looking for a tool like yours for years! My desktop and
+                  main driver is windows. That’s quite a way out isn’t it?
+                  Otherwise all good will use on my Mac. 👏👌
+                </p>
+              </div>
+            </div>
+            <div class="review">
+              <div class="profile">
+                <img src="imgs/users/dog.png" alt="user photo" />
+                <div class="data">
+                  <p>René Brandel</p>
+                  <p>@renebrandel</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>
+                  Get ready for me absolutely overusing Screen Studio by @pie6k
+                  👀
+                </p>
+              </div>
+            </div>
+            <div class="review">
+              <div class="profile">
+                <img src="imgs/users/dog.png" alt="user photo" />
+                <div class="data">
+                  <p>René Brandel</p>
+                  <p>@renebrandel</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>@pie6k The rate of updates to</p>
+              </div>
+            </div>
+            <div class="review">
+              <div class="profile">
+                <img src="imgs/users/dog.png" alt="user photo" />
+                <div class="data">
+                  <p>René Brandel</p>
+                  <p>@renebrandel</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>screen recordings look amaazing! 🌟✨</p>
+              </div>
+            </div>
+          </div>
+          <div class="column-2">
+            <div class="review">
+              <div class="profile">
+                <img src="imgs/users/dog.png" alt="user photo" />
+                <div class="data">
+                  <p>René Brandel</p>
+                  <p>@renebrandel</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>@pie6k Best thing ever, saved me half a day!</p>
+              </div>
+            </div>
+            <div class="review">
+              <div class="profile">
+                <img src="imgs/users/dog.png" alt="user photo" />
+                <div class="data">
+                  <p>René Brandel</p>
+                  <p>@renebrandel</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>
+                  @pie6k This is awesome, charge double plz! This is far more
+                  useful than Camtasia & other screen recorders.
+                </p>
+              </div>
+            </div>
+            <div class="review">
+              <div class="profile">
+                <img src="imgs/users/dog.png" alt="user photo" />
+                <div class="data">
+                  <p>René Brandel</p>
+                  <p>@renebrandel</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>
+                  @pie6k Amazing! Going to start using Screen studio for all my
+                  Twitter demos. Excited :)
+                </p>
+              </div>
+            </div>
+            <div class="review">
+              <div class="profile">
+                <img src="imgs/users/dog.png" alt="user photo" />
+                <div class="data">
+                  <p>René Brandel</p>
+                  <p>@renebrandel</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>
+                  @pie6k Wow I also love this! Buying the pro version today!
+                </p>
+              </div>
+            </div>
+            <div class="review">
+              <div class="profile">
+                <img src="imgs/users/dog.png" alt="user photo" />
+                <div class="data">
+                  <p>René Brandel</p>
+                  <p>@renebrandel</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>@pie6k This is an amazing software 👏🏾 good job!</p>
+              </div>
+            </div>
+            <div class="review">
+              <div class="profile">
+                <img src="imgs/users/dog.png" alt="user photo" />
+                <div class="data">
+                  <p>René Brandel</p>
+                  <p>@renebrandel</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>
+                  @pie6k Congrats! Screen Studio looks cool! I have been doing a
+                  lot of screen recording and video making (with ScreenFlow
+                  mostly because I am familiar with it and paid for an upgraded
+                  license recently).
+                </p>
+              </div>
+            </div>
+            <div class="review">
+              <div class="profile">
+                <img src="imgs/users/dog.png" alt="user photo" />
+                <div class="data">
+                  <p>René Brandel</p>
+                  <p>@renebrandel</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>@pie6k This is *exactly* what I was looking for, thanks.</p>
+              </div>
+            </div>
+            <div class="review">
+              <div class="profile">
+                <img src="imgs/users/dog.png" alt="user photo" />
+                <div class="data">
+                  <p>René Brandel</p>
+                  <p>@renebrandel</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>
+                  @pie6k Love it! Just bought a license. Ps: would love a way to
+                  crop out the browser header somehow.
+                </p>
+              </div>
+            </div>
+            <div class="review">
+              <div class="profile">
+                <img src="imgs/users/dog.png" alt="user photo" />
+                <div class="data">
+                  <p>René Brandel</p>
+                  <p>@renebrandel</p>
+                </div>
+              </div>
+              <div class="text">
+                <p>
+                  @pie6k I Just tried it and the experience was amazing and
+                  smooth 🚀
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="warning__text">
+          <p>
+            If you are one of the people quoted above and would like to have
+            your testimonial removed, please get in touch and I will remove it
+            instantly.
+          </p>
+        </div>
+      </section>
+      <!--! subscribing  -->
+      <section class="subscribes">
+        <div class="top-text">
+          <h1>Pay once, use forever</h1>
+          <p>
+            Screen Studio is a one-time purchase. You get all the features in
+            every plan.
+          </p>
+        </div>
+        <div class="plans">
+          <div class="standart">
+            <div class="descr">
+              <p class="name">Standart</p>
+              <div class="price-descr">
+                <span>$89</span>
+                <p>Pay-once license for you.</p>
+              </div>
+            </div>
+            <div class="options">
+              <ul>
+                <li class="options__list-item">
+                  <img src="imgs/subscr/ok.png" alt="ok" />
+                  <p>1 macOS device</p>
+                </li>
+                <li class="options__list-item">
+                  <img src="imgs/subscr/ok.png" alt="ok" />
+                  <p>Pay once, use forever</p>
+                </li>
+                <li class="options__list-item">
+                  <img src="imgs/subscr/ok.png" alt="ok" />
+                  <p>All Screen Studio features</p>
+                </li>
+                <li class="options__list-item">
+                  <img src="imgs/subscr/ok.png" alt="ok" />
+                  <p>1 year of updates</p>
+                </li>
+              </ul>
+              <button class="get-started">Get Started</button>
+            </div>
+          </div>
+          <div class="extended">
+            <div class="descr">
+              <p class="name">Extended</p>
+              <div class="price-descr">
+                <span class="">$139</span>
+                <p>Great for multi-devices setups & small teams.</p>
+              </div>
+            </div>
+            <div class="options">
+              <ul>
+                <li class="options__list-item">
+                  <img src="imgs/subscr/ok.png" alt="ok" />
+                  <p>3 macOS device</p>
+                </li>
+                <li class="options__list-item">
+                  <img src="imgs/subscr/ok.png" alt="ok" />
+                  <p>Pay once, use forever</p>
+                </li>
+                <li class="options__list-item">
+                  <img src="imgs/subscr/ok.png" alt="ok" />
+                  <p>All Screen Studio features</p>
+                </li>
+                <li class="options__list-item">
+                  <img src="imgs/subscr/ok.png" alt="ok" />
+                  <p>1 year of updates</p>
+                </li>
+              </ul>
+              <button class="get-started">Get Started</button>
+            </div>
+          </div>
+          <div class="teams">
+            <div class="descr">
+              <p class="name">Teams</p>
+              <div class="price-descr">
+                <span>Get in touch</span>
+                <p>Pay per seat for your team.</p>
+              </div>
+            </div>
+            <div class="options">
+              <ul>
+                <li class="options__list-item">
+                  <img src="imgs/subscr/ok.png" alt="ok" />
+                  <p>Unlimited macOS devices</p>
+                </li>
+                <li class="options__list-item">
+                  <img src="imgs/subscr/ok.png" alt="ok" />
+                  <p>All Screen Studio features</p>
+                </li>
+                <li class="options__list-item">
+                  <img src="imgs/subscr/ok.png" alt="ok" />
+                  <p>App updates during the subscription</p>
+                </li>
+              </ul>
+              <button class="get-started contact">Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--! q&a -->
+      <section class="qa">
+        <div class="top-text">
+          <h1>Questions & Answers</h1>
+          <p>If you have any other questions - please get in touch</p>
+        </div>
+        <div class="question-block">
+          <ul class="q-list">
+            <li class="question">
+              <div>
+                <img
+                  width="32"
+                  height="32"
+                  src="imgs/qa/arrow-down.png"
+                  alt="arrow down"
+                />
+                <p>
+                    How is Screen Studio different from other screen recording apps?
+                </p>
+              </div>
+              
+              <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, fugit?</p>
+              </div>
+            </li>
+            <li class="question">
+              <div>
+                <img
+                  width="32"
+                  height="32"
+                  src="imgs/qa/arrow-down.png"
+                  alt="arrow down"
+                />
+                <p>Is Windows version ready?</p>
+              </div>
+              
+              <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, fugit?</p>
+              </div>
+            </li>
+            <li class="question">
+              <div>
+                <img
+                  width="32"
+                  height="32"
+                  src="imgs/qa/arrow-down.png"
+                  alt="arrow down"
+                />
+                <p>Is there an educational discount?</p>
+              </div>
+              
+              <div class="answer">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, fugit?
+              </div>
+            </li>
+            <li class="question">
+              <div>
+                <img
+                  width="32"
+                  height="32"
+                  src="imgs/qa/arrow-down.png"
+                  alt="arrow down"
+                />
+                <p>What features will be added in the future?</p>
+              </div>
+              
+              <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, fugit?</p>
+              </div>
+            </li>
+            <li class="question">
+              <div>
+                <img
+                  width="32"
+                  height="32"
+                  src="imgs/qa/arrow-down.png"
+                  alt="arrow down"
+                />
+                <p>Can I record voiceover or selfie-camera?</p>
+              </div>
+              
+              <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, fugit?</p>
+              </div>
+            </li>
+            <li class="question">
+              <div>
+                <img
+                  width="32"
+                  height="32"
+                  src="imgs/qa/arrow-down.png"
+                  alt="arrow down"
+                />
+                <p>Can I get a refund if I don't like it?</p>
+              </div>
+              
+              <div class="answer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, fugit?</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--? Footer -->
+    <footer class="footer">
+      <div class="footer__logo">
+        <div class="logo__block">
+          <img src="imgs/logo_header.png" alt="logo" />
+          <p>Screen Studio</p>
+        </div>
+        <div class="copyright">
+          <p>© 2023 Adam Pietrasiak. All rights reserved.</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <ul class="footer__nav">
+          <li class="nav__item">Roadmap</li>
+          <li class="nav__item">Help</li>
+          <li class="nav__item">Privacy policy</li>
+          <li class="nav__item">Reset License</li>
+        </ul>
+        <ul class="socials">
+          <li class="socials__item">Follow me on Twitter</li>
+          <li class="socials__item">Telegram group</li>
+          <li class="socials__item">Feedback community hub</li>
+          <li class="socials__item">Get in touch</li>
+          <li class="socials__item">Work progress</li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
